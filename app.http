@@ -1,0 +1,38 @@
+
+
+GET http://localhost:3000/todos/?category=h;ig
+
+
+GET http://localhost:3000/todo/4/
+
+GET http://localhost:3000/agenda/?date=2021-2-2222
+
+
+POST http://localhost:3000/todos/
+Content-Type:application/json
+
+{
+ "id": 6,
+ "todo": "Finalize event theme",
+ "priority": "LOW",
+ "status": "TO DO",
+ "category": "HOME",
+ "dueDate": "2021-02-22"
+}
+
+PUT http://localhost:3000/todos/1/
+Content-Type:application/json
+
+{ "priority": "LOW" }
+
+PUT http://localhost:3000/todos/1/
+Content-Type:application/json
+
+{ "status": "IN PROGRESS" }
+
+PUT http://localhost:3000/todos/1/
+Content-Type:application/json
+
+{ "category":"LEARNING" }
+
+DELETE http://localhost:3000/todos/6/
